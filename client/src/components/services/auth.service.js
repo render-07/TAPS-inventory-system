@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "/api";
+const baseURL = "https://technocashierautomatedproduct.herokuapp.com/api";
 
 // register request
 const register = (newUser) => {
