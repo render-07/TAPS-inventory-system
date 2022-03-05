@@ -43,7 +43,7 @@ export default function Home() {
           />
           {showAddCategory && <AddCategory />}
           {/*<Categories categories = {categories} onDelete = {deleteCategory} onToggle = {toggleReminder}/>*/}
-          <Categories />
+          {/* <Categories /> */}
         </div>
         <div className="rec-upper-h"></div>
         <div className="rec-lower-left-h"></div>
