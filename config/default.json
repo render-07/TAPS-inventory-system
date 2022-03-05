@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb://localhost:27017/enterprise_software_system",
+  "mongoURI": "mongodb+srv://rubickmagus07:ZijQk6B79giQHnX@cluster0.latex.mongodb.net/test?authSource=admin&replicaSet=atlas-cin19h-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
   "jwtSecret": "sl_myJwtSecret"
 }
