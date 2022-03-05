@@ -7,9 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./container/store";
 
-// import img from "./assets/pic.png";
-// import logo from "./assets/logo-green.png";
-// import bg from "./assets/background.jpg";
+// import img from "https://technocashierautomatedproduct.herokuapp.com/assets/pic.png";
+// import logo from "https://technocashierautomatedproduct.herokuapp.com/assets/logo-green.png";
+// import bg from "https://technocashierautomatedproduct.herokuapp.com/assets/background.jpg";
 
 // console.log(img);
 // console.log(logo);

@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background-image: url("/assets/background.jpg");
+  background-image: url("https://technocashierautomatedproduct.herokuapp.com/assets/background.jpg");
   width: 100%;
   height: 100%;
 }
@@ -83,7 +83,7 @@ body {
 }
 
 .header-logo {
-  background-image: url("/assets/logo-green.png");
+  background-image: url("https://technocashierautomatedproduct.herokuapp.com/assets/logo-green.png");
   background-repeat: no-repeat;
   background-size: 200px;
   width: 200px;

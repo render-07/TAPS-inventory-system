@@ -530,7 +530,9 @@
         border-radius: 10px;**/
     @media (min-width: 1100px) {
       .bg-img {
-        background: #fff url(/assets/pic.png) top right;
+        background: #fff
+          url(https://technocashierautomatedproduct.herokuapp.com/assets/pic.png)
+          top right;
         background-repeat: no-repeat;
         background-size: 700px;
         background-position: right;
