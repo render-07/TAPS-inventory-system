@@ -11,12 +11,14 @@ export const getCategories = () => (dispatch) => {
   //     type: GET_CATEGORIES
   // }
   dispatch(setCategoriesLoading());
-  axios.get("/api/categories").then((res) =>
-    dispatch({
-      type: GET_CATEGORIES,
-      payload: res.data,
-    })
-  );
+  axios
+    .get("https://technocashierautomatedproduct.herokuapp.com/api/categories")
+    .then((res) =>
+      dispatch({
+        type: GET_CATEGORIES,
+        payload: res.data,
+      })
+    );
 };
 
 export const addCategory = (category) => (dispatch) => {
@@ -24,12 +26,17 @@ export const addCategory = (category) => (dispatch) => {
   //     type: ADD_CATEGORY,
   //     payload: category // passing some parameters need to be in the payload
   // }
-  axios.post("/api/categories", category).then((res) =>
-    dispatch({
-      type: ADD_CATEGORY,
-      payload: res.data,
-    })
-  );
+  axios
+    .post(
+      "https://technocashierautomatedproduct.herokuapp.com/api/categories",
+      category
+    )
+    .then((res) =>
+      dispatch({
+        type: ADD_CATEGORY,
+        payload: res.data,
+      })
+    );
 };
 
 export const deleteCategory = (id) => (dispatch) => {
@@ -37,12 +44,16 @@ export const deleteCategory = (id) => (dispatch) => {
   //     type: DELETE_CATEGORY,
   //     payload: id // passing some parameters need to be in the payload
   // }
-  axios.delete(`/api/categories/${id}`).then((res) =>
-    dispatch({
-      type: DELETE_CATEGORY,
-      payload: id,
-    })
-  );
+  axios
+    .delete(
+      `https://technocashierautomatedproduct.herokuapp.com/api/categories/${id}`
+    )
+    .then((res) =>
+      dispatch({
+        type: DELETE_CATEGORY,
+        payload: id,
+      })
+    );
 };
 
 export const setCategoriesLoading = () => {

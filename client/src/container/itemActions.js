@@ -6,12 +6,14 @@ export const getItems = () => (dispatch) => {
   //     type: GET_ITEMS
   // }
   dispatch(setItemsLoading());
-  axios.get("/api/items").then((res) =>
-    dispatch({
-      type: GET_ITEMS,
-      payload: res.data,
-    })
-  );
+  axios
+    .get("https://technocashierautomatedproduct.herokuapp.com/api/items")
+    .then((res) =>
+      dispatch({
+        type: GET_ITEMS,
+        payload: res.data,
+      })
+    );
 };
 
 export const addItem = (item) => (dispatch) => {
@@ -19,12 +21,14 @@ export const addItem = (item) => (dispatch) => {
   //     type: ADD_ITEM,
   //     payload: item // passing some parameters need to be in the payload
   // }
-  axios.post("/api/items", item).then((res) =>
-    dispatch({
-      type: ADD_ITEM,
-      payload: res.data,
-    })
-  );
+  axios
+    .post("https://technocashierautomatedproduct.herokuapp.com/api/items", item)
+    .then((res) =>
+      dispatch({
+        type: ADD_ITEM,
+        payload: res.data,
+      })
+    );
 };
 
 export const setItemsLoading = () => {
