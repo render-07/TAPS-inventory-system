@@ -27,6 +27,9 @@ const Categories = () => {
   const { items } = item;
   const { suppliers } = supplier;
 
+  console.log("after nito");
+  console.log(categories);
+
   return categories.map((ctgry) => (
     <SingleCategory
       key={ctgry._id}
