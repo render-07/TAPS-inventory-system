@@ -12,8 +12,8 @@ const Categories = () => {
   // useEffect is equivalent to componentDidMount()
   useEffect(() => {
     dispatch(getCategories());
-    // dispatch(getItems());
-    // dispatch(getSuppliers());
+    dispatch(getItems());
+    dispatch(getSuppliers());
   }, []);
 
   // Get reducer from index.js
@@ -26,9 +26,6 @@ const Categories = () => {
   const { categories } = category;
   const { items } = item;
   const { suppliers } = supplier;
-
-  console.log("after nito");
-  console.log(categories);
 
   return categories.map((ctgry) => (
     <SingleCategory
