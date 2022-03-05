@@ -74,7 +74,9 @@ exports.login = async (req, res) => {
     if (!isMatch) return res.status(406).json({ err: "Invalid Credentials" });
 
     // create jwt token
-    const token = jwt.sign({ id: user._id }, config.get("jwtSecret"));
+    const token = jwt.sign({ id: user._id }, config.get("jwtSecret"), {
+      expiresIn: "3s",
+    });
 
     res.json({ token, username: user.username, email: user.email });
   } catch (error) {
