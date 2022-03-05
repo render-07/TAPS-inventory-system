@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// Declare PORT number (process.env.port is for HEROKU)
+/// Declare PORT number (process.env.port is for HEROKU)
 const port = process.env.port || 4000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
 
