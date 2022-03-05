@@ -495,8 +495,7 @@
   .header {
     z-index: 1;
     position: absolute;
-    background: transparent
-      url(http://localhost:3000/static/media/logo-green.5c1c03a3.png);
+    background: transparent url(/static/media/logo-green.5c1c03a3.png);
     background-repeat: no-repeat;
     background-size: 200px;
     width: 200px;
@@ -531,7 +530,7 @@
         border-radius: 10px;**/
     @media (min-width: 1100px) {
       .bg-img {
-        background: #fff url(http://localhost:3000/assets/pic.png) top right;
+        background: #fff url(/assets/pic.png) top right;
         background-repeat: no-repeat;
         background-size: 700px;
         background-position: right;
